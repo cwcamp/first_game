@@ -1,8 +1,17 @@
 #include <iostream>
 #include <vector>
 #include <string>
+// #include "./Gun/Gun.h"
 
 using namespace std;
+
+class Gun {
+    public:
+        int damage = 42;
+        void fire() {
+            cout << "Bang" <<endl;
+        }
+};
 
 int main()
 {
@@ -13,4 +22,19 @@ int main()
         cout << word << " ";
     }
     cout << endl; 
+
+    Gun myGun;
+
+    myGun.fire();
+
+    cout << myGun.damage <<endl;
 }
+
+
+/*
+Parts of the gun
+Rarity
+Type (Base)
+Gun Stats
+Perks
+*/
